@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busan Life 연락</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Busan&nbsp;Life</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="membership.html">멤버십</a></li>
+          <li><a href="contact.html" class="active">연락</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h2>연락</h2>
+      </div>
+    </section>
+    <section class="content contact-content">
+      <div class="container">
+        <h3>문의하기</h3>
+        <p>
+          궁금한 점이나 제안 사항이 있으시면 아래 양식을 통해 연락해 주세요. 팀이
+          최대한 빨리 답변드리겠습니다.
+        </p>
+        <form id="contact-form">
+          <label for="contact-name">이름</label>
+          <input type="text" id="contact-name" name="contact-name" required />
+          <label for="contact-email">이메일</label>
+          <input type="email" id="contact-email" name="contact-email" required />
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">보내기</button>
+        </form>
+      </div>
+    </section>
+    <section class="ads">
+      <div class="container">
+        <h3>광고</h3>
+        <div class="ad-placeholder">
+          광고 자리 - 여기에 파트너사 광고가 표시됩니다.
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 Busan Life. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
