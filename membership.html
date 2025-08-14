@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busan Life 멤버십</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Busan&nbsp;Life</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="membership.html" class="active">멤버십</a></li>
+          <li><a href="contact.html">연락</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h2>멤버십</h2>
+      </div>
+    </section>
+    <section class="content membership-info">
+      <div class="container">
+        <h3>가입 옵션</h3>
+        <div class="plans">
+          <div class="plan">
+            <h4>Basic (무료)</h4>
+            <p>• 광고가 포함됩니다.</p>
+            <p>• 기본 정보 및 추천 콘텐츠 제공.</p>
+            <p>• 이메일 뉴스레터 구독.</p>
+            <button class="btn disabled" disabled>현재 이용 중</button>
+          </div>
+          <div class="plan premium">
+            <h4>Premium (월 5,000원)</h4>
+            <p>• 광고 없는 환경.</p>
+            <p>• 독점 콘텐츠 및 특별 할인 혜택.</p>
+            <p>• 프리미엄 고객 서비스.</p>
+            <button class="btn" id="join-btn">가입하기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Membership form hidden by default -->
+    <section class="membership-form-section" id="membership-form-section">
+      <div class="container">
+        <h3>프리미엄 멤버십 가입</h3>
+        <p>
+          아래 양식을 작성하시면 결제 페이지로 이동합니다. 실제 결제 전에
+          확인을 요청드릴 예정입니다.
+        </p>
+        <form id="membership-form">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" required />
+          <label for="plan">멤버십 플랜</label>
+          <select id="plan" name="plan">
+            <option value="premium" selected>Premium (월 5,000원)</option>
+          </select>
+          <button type="submit" class="btn">결제 진행</button>
+        </form>
+      </div>
+    </section>
+    <section class="ads">
+      <div class="container">
+        <h3>광고</h3>
+        <div class="ad-placeholder">
+          광고 자리 - 여기에 파트너사 광고가 표시됩니다.
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 Busan Life. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
